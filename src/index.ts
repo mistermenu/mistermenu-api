@@ -2,7 +2,7 @@ import express from "express";
 import { Request } from "express";
 import { PrismaClient } from "@prisma/client";
 import cors from "cors";
-import { dataContacts } from "./data/contacts";
+import { dataProducts } from "./data/products";
 
 const prisma = new PrismaClient();
 
@@ -14,77 +14,77 @@ app.use(express.json());
 app.use(express.raw({ type: "application/vnd.custom-type" }));
 app.use(express.text({ type: "text/html" }));
 
-app.get("/contacts", async (req, res) => {
-  const contacts = await prisma.contact.findMany({
+app.get("/products", async (req, res) => {
+  const products = await prisma.product.findMany({
     orderBy: { name: "asc" },
   });
 
-  res.json(contacts);
+  res.json(products);
 });
 
-app.get("/contacts/:contactId", async (req, res) => {
-  const id = req.params.contactId;
+app.get("/products/:productId", async (req, res) => {
+  const id = req.params.productId;
 
-  const contact = await prisma.contact.findUnique({
+  const product = await prisma.product.findUnique({
     where: { id },
   });
 
-  if (!contact) {
+  if (!product) {
     return res.status(404).json({});
   }
 
-  return res.status(200).json(contact);
+  return res.status(200).json(product);
 });
 
-app.post("/contacts/multiple", async (req, res) => {
-  const contact = await prisma.contact.createMany({
-    data: dataContacts,
+app.post("/products/multiple", async (req, res) => {
+  const product = await prisma.product.createMany({
+    data: dataProducts,
     skipDuplicates: true,
   });
 
-  return res.json(contact);
+  return res.json(product);
 });
 
-app.post("/contacts", async (req, res) => {
-  const contact = await prisma.contact.create({
+app.post("/products", async (req, res) => {
+  const product = await prisma.product.create({
     data: {
-      contacted: true,
+      producted: true,
       name: req.body.name ?? "No name",
       email: req.body.email ?? "No email",
     },
   });
 
-  return res.json(contact);
+  return res.json(product);
 });
 
-app.put("/contacts/:contactId", async (req, res) => {
-  const id = req.params.contactId;
-  const contact = await prisma.contact.update({
+app.put("/products/:productId", async (req, res) => {
+  const id = req.params.productId;
+  const product = await prisma.product.update({
     where: { id },
     data: req.body,
   });
 
-  return res.json(contact);
+  return res.json(product);
 });
 
-app.delete("/contacts", async (req, res) => {
-  await prisma.contact.deleteMany();
+app.delete("/products", async (req, res) => {
+  await prisma.product.deleteMany();
 
   return res.send({
     status: "ok",
-    message: "All contacts have been deleted",
+    message: "All products have been deleted",
   });
 });
 
-app.delete("/contacts/:id", async (req, res) => {
+app.delete("/products/:id", async (req, res) => {
   const id = req.params.id;
-  await prisma.contact.delete({
+  await prisma.product.delete({
     where: { id },
   });
 
   return res.send({
     status: "ok",
-    message: `One contact by id ${id} has been deleted`,
+    message: `One product by id ${id} has been deleted`,
   });
 });
 
@@ -94,8 +94,8 @@ app.get("/", async (req, res) => {
   <h1>REST API</h1>
   <h2>Available Routes</h2>
   <pre>
-    GET, POST /contacts
-    GET, PUT, DELETE /contacts/:id
+    GET, POST /products
+    GET, PUT, DELETE /products/:id
   </pre>
   `.trim()
   );
