@@ -1,6 +1,6 @@
 export let dataProducts = [
   {
-    _id: "63ef24e7f83240448d15f096",
+    id: "63ef24e7f83240448d15f096",
     category: "63f03f8e258e70eb5584a98c",
     description: "Creamy rice bowl with savory shrimp bits",
     image:
@@ -9,7 +9,7 @@ export let dataProducts = [
     price: 30000,
   },
   {
-    _id: "63ef2569f83240448d15f097",
+    id: "63ef2569f83240448d15f097",
     category: "63f03f8e258e70eb5584a98c",
     description: "Hearty ocean mix in warm rice soup.",
     image:
@@ -18,7 +18,7 @@ export let dataProducts = [
     price: 34000,
   },
   {
-    _id: "63ef2582f83240448d15f098",
+    id: "63ef2582f83240448d15f098",
     category: "63f03f8e258e70eb5584a98c",
     description: "Tasty fish and tofu medley in rice soup.",
     image:
@@ -27,7 +27,7 @@ export let dataProducts = [
     price: 32000,
   },
   {
-    _id: "63ef291ff83240448d15f09a",
+    id: "63ef291ff83240448d15f09a",
     category: "63f03f8e258e70eb5584a98c",
     description: "Savory surf and turf rice bowl comfort food.",
     image:
@@ -36,7 +36,7 @@ export let dataProducts = [
     price: 32000,
   },
   {
-    _id: "63ef2953f83240448d15f09b",
+    id: "63ef2953f83240448d15f09b",
     category: "63f03f8e258e70eb5584a98c",
     description: "Creamy rice soup with fish, egg and tofu.",
     image:
@@ -45,7 +45,7 @@ export let dataProducts = [
     price: 34000,
   },
   {
-    _id: "63ef2983f83240448d15f09c",
+    id: "63ef2983f83240448d15f09c",
     category: "63f03f8e258e70eb5584a98c",
     description: "Savory porridge with shrimp, salted egg, phitan flavor.",
     image:
@@ -54,7 +54,7 @@ export let dataProducts = [
     price: 34000,
   },
   {
-    _id: "63ef29fff83240448d15f09d",
+    id: "63ef29fff83240448d15f09d",
     category: "63f03f8e258e70eb5584a98d",
     description: "Comforting beverage, warm and soothing to sip.",
     image:
@@ -63,7 +63,7 @@ export let dataProducts = [
     price: 13000,
   },
   {
-    _id: "63ef2a06f83240448d15f09e",
+    id: "63ef2a06f83240448d15f09e",
     category: "63f03f8e258e70eb5584a98d",
     description: "Refreshing iced tea, perfect for hot days.",
     image:
@@ -72,7 +72,7 @@ export let dataProducts = [
     price: 13000,
   },
   {
-    _id: "63ef2a0cf83240448d15f09f",
+    id: "63ef2a0cf83240448d15f09f",
     category: "63f03f8e258e70eb5584a98d",
     description: "Tangy and refreshing, a perfect summer drink.",
     image:
@@ -81,7 +81,7 @@ export let dataProducts = [
     price: 17000,
   },
   {
-    _id: "63ef2a15f83240448d15f0a0",
+    id: "63ef2a15f83240448d15f0a0",
     category: "63f03f8e258e70eb5584a98d",
     description: "Freshly squeezed melon, sweet and hydrating thirst quencher.",
     image:
@@ -90,7 +90,7 @@ export let dataProducts = [
     price: 22000,
   },
   {
-    _id: "63ef2a1ff83240448d15f0a1",
+    id: "63ef2a1ff83240448d15f0a1",
     category: "63f03f8e258e70eb5584a98d",
     description: "Traditional Chinese tea, steeped in rich cultural heritage.",
     image:
@@ -99,7 +99,7 @@ export let dataProducts = [
     price: 26000,
   },
   {
-    _id: "63ef2a28f83240448d15f0a2",
+    id: "63ef2a28f83240448d15f0a2",
     category: "63f03f8e258e70eb5584a98d",
     description: "Juicy watermelon nectar, a summertime thirst quencher.",
     image:
@@ -108,7 +108,7 @@ export let dataProducts = [
     price: 22000,
   },
   {
-    _id: "63ef2a32f83240448d15f0a3",
+    id: "63ef2a32f83240448d15f0a3",
     category: "63f03f8e258e70eb5584a98d",
     description: "Vitamin C-packed juice, bright and tangy taste.",
     image:
@@ -117,7 +117,7 @@ export let dataProducts = [
     price: 22000,
   },
   {
-    _id: "63ef2a3df83240448d15f0a4",
+    id: "63ef2a3df83240448d15f0a4",
     category: "63f03f8e258e70eb5584a98d",
     description: "Fizzy, sweet soda with a distinct flavor.",
     image:
@@ -126,7 +126,7 @@ export let dataProducts = [
     price: 18000,
   },
   {
-    _id: "63ef2c4df83240448d15f0a7",
+    id: "63ef2c4df83240448d15f0a7",
     category: "63f03f8e258e70eb5584a98e",
     description: "Tangy, fiery broth with a tantalizing kick.",
     image:
@@ -135,7 +135,7 @@ export let dataProducts = [
     price: 50000,
   },
   {
-    _id: "63ef2ce2f83240448d15f0a8",
+    id: "63ef2ce2f83240448d15f0a8",
     category: "63f03f8e258e70eb5584a98e",
     description: "elvety soup with sweet corn and succulent crab.",
     image:
@@ -144,7 +144,7 @@ export let dataProducts = [
     price: 50000,
   },
   {
-    _id: "63ef2cf5f83240448d15f0a9",
+    id: "63ef2cf5f83240448d15f0a9",
     category: "63f03f8e258e70eb5584a98e",
     description: "Mineral-rich broth, savory and nourishing seaweed soup.",
     image:
@@ -153,7 +153,7 @@ export let dataProducts = [
     price: 47000,
   },
   {
-    _id: "63ef2cfbf83240448d15f0aa",
+    id: "63ef2cfbf83240448d15f0aa",
     category: "63f03f8e258e70eb5584a98e",
     description: "Brimming with oceanic flavors, a seafood lover's delight.",
     image:
@@ -162,7 +162,7 @@ export let dataProducts = [
     price: 106000,
   },
   {
-    _id: "63ef2d00f83240448d15f0ab",
+    id: "63ef2d00f83240448d15f0ab",
     category: "63f03f8e258e70eb5584a98e",
     description: "Silken tofu, hearty soup with a delicate flavor.",
     image:
@@ -171,7 +171,7 @@ export let dataProducts = [
     price: 88000,
   },
   {
-    _id: "63ef2d4ef83240448d15f0ac",
+    id: "63ef2d4ef83240448d15f0ac",
     category: "63f041b1258e70eb5584a9db",
     description: "Crispy, savory snack with a touch of salt.",
     image:
@@ -180,7 +180,7 @@ export let dataProducts = [
     price: 58000,
   },
   {
-    _id: "63ef2db8f83240448d15f0ad",
+    id: "63ef2db8f83240448d15f0ad",
     category: "63f041b1258e70eb5584a9db",
     description: "Sizzling hot seafood, bold black pepper flavors.",
     image:
@@ -189,7 +189,7 @@ export let dataProducts = [
     price: 60000,
   },
   {
-    _id: "63ef2df4f83240448d15f0ae",
+    id: "63ef2df4f83240448d15f0ae",
     category: "63f041b1258e70eb5584a9db",
     description: "Savory fried fish, elevated with spicy XO sauce.",
     image:
@@ -198,7 +198,7 @@ export let dataProducts = [
     price: 60000,
   },
   {
-    _id: "63ef2e3af83240448d15f0af",
+    id: "63ef2e3af83240448d15f0af",
     category: "63f041b1258e70eb5584a9db",
     description: "Crispy-fried shrimp, coated in aromatic curry seasoning.",
     image:
@@ -207,7 +207,7 @@ export let dataProducts = [
     price: 69000,
   },
   {
-    _id: "63ef2e75f83240448d15f0b0",
+    id: "63ef2e75f83240448d15f0b0",
     category: "63f041b1258e70eb5584a9dc",
     description: "Juicy chicken, stir-fried in rich oyster sauce.",
     image:
@@ -216,7 +216,7 @@ export let dataProducts = [
     price: 53000,
   },
   {
-    _id: "63ef2e98f83240448d15f0b3",
+    id: "63ef2e98f83240448d15f0b3",
     category: "63f041b1258e70eb5584a9dc",
     description: "Spicy fried chicken, packed with bold balacan flavors.",
     image:
@@ -225,7 +225,7 @@ export let dataProducts = [
     price: 53000,
   },
   {
-    _id: "63ef2e9cf83240448d15f0b4",
+    id: "63ef2e9cf83240448d15f0b4",
     category: "63f041b1258e70eb5584a9dc",
     description: "Savory stir-fry, featuring peanuts and spicy peppers.",
     image:
@@ -234,7 +234,7 @@ export let dataProducts = [
     price: 53000,
   },
   {
-    _id: "63ef2ea2f83240448d15f0b5",
+    id: "63ef2ea2f83240448d15f0b5",
     category: "63f041b1258e70eb5584a9dc",
     description: "Crispy, juicy, and seasoned to perfection.",
     image:
