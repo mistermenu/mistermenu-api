@@ -47,11 +47,7 @@ app.post("/products/multiple", async (req, res) => {
 
 app.post("/products", async (req, res) => {
   const product = await prisma.product.create({
-    data: {
-      producted: true,
-      name: req.body.name ?? "No name",
-      email: req.body.email ?? "No email",
-    },
+    data: req.body,
   });
 
   return res.json(product);
