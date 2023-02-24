@@ -15,9 +15,10 @@ model Product {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  name        String
-  description String
-  image       String
-  category    String
-  price       Int
+  name          String
+  description   String
+  image         String
+  category      String
+  price         Int
+  isRecommended Boolean
 }
